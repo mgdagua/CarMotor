@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TerMoto: Referencia del Archivo main.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">TerMoto
+   </div>
+   <div id="projectbrief">Carro controlado por control Xbox One SerieS que mide la temperatura</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del Archivo main.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;xc.h&gt;</code><br />
+<code>#include &lt;pic16f887.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_c_o_n_f_i_g_8h_source.html">CONFIG.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_l_c_d_8h_source.html">LCD.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="adc_8h_source.html">adc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="uart_8h_source.html">uart.h</a>&quot;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a40b4fe45622d5b33767ead7735f354c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a40b4fe45622d5b33767ead7735f354c4">beta</a>&#160;&#160;&#160;4090</td></tr>
+<tr class="separator:a40b4fe45622d5b33767ead7735f354c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba834752bc4c2df784c289e2f34aeac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a2ba834752bc4c2df784c289e2f34aeac">TEMPERATURA_ALTA</a>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:a2ba834752bc4c2df784c289e2f34aeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a2a8b08eaa7cd24cf5e33673fe70e71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a3a2a8b08eaa7cd24cf5e33673fe70e71">TEMPERATURA_IDEAL</a>&#160;&#160;&#160;27</td></tr>
+<tr class="separator:a3a2a8b08eaa7cd24cf5e33673fe70e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19967e86e8b6d7a21caf3ece59a2f56"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ab19967e86e8b6d7a21caf3ece59a2f56">TEMPERATURA_BAJA</a>&#160;&#160;&#160;24</td></tr>
+<tr class="separator:ab19967e86e8b6d7a21caf3ece59a2f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78314d026a41fd2bd57600a012409cb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a78314d026a41fd2bd57600a012409cb5">HUMEDAD_ALTA</a>&#160;&#160;&#160;100</td></tr>
+<tr class="separator:a78314d026a41fd2bd57600a012409cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12cfd320c24e9ddae3961c530d35d6a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a12cfd320c24e9ddae3961c530d35d6a2">HUMEDAD_IDEAL</a>&#160;&#160;&#160;80</td></tr>
+<tr class="separator:a12cfd320c24e9ddae3961c530d35d6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a069fe9383201bca32c3b02b998d89fc8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a069fe9383201bca32c3b02b998d89fc8">HUMEDAD_BAJA</a>&#160;&#160;&#160;60</td></tr>
+<tr class="separator:a069fe9383201bca32c3b02b998d89fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb92cf70f1c10da92fc5547d8721db1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a3eb92cf70f1c10da92fc5547d8721db1">MUCHA_LUZ</a>&#160;&#160;&#160;20</td></tr>
+<tr class="separator:a3eb92cf70f1c10da92fc5547d8721db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a287a7e874610319b30009378ca1fc041"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a287a7e874610319b30009378ca1fc041">lUZ_IDEAL</a>&#160;&#160;&#160;150</td></tr>
+<tr class="separator:a287a7e874610319b30009378ca1fc041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04b9fdb7ee051d5cf2540fdb8835807"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#aa04b9fdb7ee051d5cf2540fdb8835807">POCA_LUZ</a>&#160;&#160;&#160;900</td></tr>
+<tr class="separator:aa04b9fdb7ee051d5cf2540fdb8835807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:acdef7a1fd863a6d3770c1268cb06add3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#acdef7a1fd863a6d3770c1268cb06add3">main</a> ()</td></tr>
+<tr class="separator:acdef7a1fd863a6d3770c1268cb06add3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae269899a408c67c3c75ee0a9d95dc3c5"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ae269899a408c67c3c75ee0a9d95dc3c5">idx</a> = 0</td></tr>
+<tr class="separator:ae269899a408c67c3c75ee0a9d95dc3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa77aa2d08e82042c060d733b25d96fde"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#aa77aa2d08e82042c060d733b25d96fde">Temperatura</a> [4]</td></tr>
+<tr class="separator:aa77aa2d08e82042c060d733b25d96fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acca1086fe9d7011bbb1349f309af4273"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#acca1086fe9d7011bbb1349f309af4273">Humedad</a> [4]</td></tr>
+<tr class="separator:acca1086fe9d7011bbb1349f309af4273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b436b424e38dff9fe98506b2a60af19"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a6b436b424e38dff9fe98506b2a60af19">Luz</a> []</td></tr>
+<tr class="separator:a6b436b424e38dff9fe98506b2a60af19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf9959a2c6c9c45e8bdaf38290357a14"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#aaf9959a2c6c9c45e8bdaf38290357a14">Fila1</a> [16]</td></tr>
+<tr class="separator:aaf9959a2c6c9c45e8bdaf38290357a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3fb4c936c2b1120b2f4e4cbf6ebdee5"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#af3fb4c936c2b1120b2f4e4cbf6ebdee5">Fila2</a> [16]</td></tr>
+<tr class="separator:af3fb4c936c2b1120b2f4e4cbf6ebdee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a228ffa7c251c46548969951a57baa1b7"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a228ffa7c251c46548969951a57baa1b7">Sensor_Temperatura</a></td></tr>
+<tr class="separator:a228ffa7c251c46548969951a57baa1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ac80a87872fd2f2a9cbe84c85d563e"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ac9ac80a87872fd2f2a9cbe84c85d563e">Sensor_Humedad</a></td></tr>
+<tr class="separator:ac9ac80a87872fd2f2a9cbe84c85d563e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26eff80dfa6ddb1f43ba85e969c3e1fa"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a26eff80dfa6ddb1f43ba85e969c3e1fa">Sensor_Luz</a></td></tr>
+<tr class="separator:a26eff80dfa6ddb1f43ba85e969c3e1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="a40b4fe45622d5b33767ead7735f354c4" name="a40b4fe45622d5b33767ead7735f354c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40b4fe45622d5b33767ead7735f354c4">&#9670;&#160;</a></span>beta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define beta&#160;&#160;&#160;4090</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78314d026a41fd2bd57600a012409cb5" name="a78314d026a41fd2bd57600a012409cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78314d026a41fd2bd57600a012409cb5">&#9670;&#160;</a></span>HUMEDAD_ALTA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HUMEDAD_ALTA&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a069fe9383201bca32c3b02b998d89fc8" name="a069fe9383201bca32c3b02b998d89fc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a069fe9383201bca32c3b02b998d89fc8">&#9670;&#160;</a></span>HUMEDAD_BAJA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HUMEDAD_BAJA&#160;&#160;&#160;60</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12cfd320c24e9ddae3961c530d35d6a2" name="a12cfd320c24e9ddae3961c530d35d6a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12cfd320c24e9ddae3961c530d35d6a2">&#9670;&#160;</a></span>HUMEDAD_IDEAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HUMEDAD_IDEAL&#160;&#160;&#160;80</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a287a7e874610319b30009378ca1fc041" name="a287a7e874610319b30009378ca1fc041"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a287a7e874610319b30009378ca1fc041">&#9670;&#160;</a></span>lUZ_IDEAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define lUZ_IDEAL&#160;&#160;&#160;150</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3eb92cf70f1c10da92fc5547d8721db1" name="a3eb92cf70f1c10da92fc5547d8721db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eb92cf70f1c10da92fc5547d8721db1">&#9670;&#160;</a></span>MUCHA_LUZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MUCHA_LUZ&#160;&#160;&#160;20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa04b9fdb7ee051d5cf2540fdb8835807" name="aa04b9fdb7ee051d5cf2540fdb8835807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa04b9fdb7ee051d5cf2540fdb8835807">&#9670;&#160;</a></span>POCA_LUZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define POCA_LUZ&#160;&#160;&#160;900</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ba834752bc4c2df784c289e2f34aeac" name="a2ba834752bc4c2df784c289e2f34aeac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ba834752bc4c2df784c289e2f34aeac">&#9670;&#160;</a></span>TEMPERATURA_ALTA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEMPERATURA_ALTA&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab19967e86e8b6d7a21caf3ece59a2f56" name="ab19967e86e8b6d7a21caf3ece59a2f56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab19967e86e8b6d7a21caf3ece59a2f56">&#9670;&#160;</a></span>TEMPERATURA_BAJA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEMPERATURA_BAJA&#160;&#160;&#160;24</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a2a8b08eaa7cd24cf5e33673fe70e71" name="a3a2a8b08eaa7cd24cf5e33673fe70e71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a2a8b08eaa7cd24cf5e33673fe70e71">&#9670;&#160;</a></span>TEMPERATURA_IDEAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TEMPERATURA_IDEAL&#160;&#160;&#160;27</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="acdef7a1fd863a6d3770c1268cb06add3" name="acdef7a1fd863a6d3770c1268cb06add3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef7a1fd863a6d3770c1268cb06add3">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="aaf9959a2c6c9c45e8bdaf38290357a14" name="aaf9959a2c6c9c45e8bdaf38290357a14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf9959a2c6c9c45e8bdaf38290357a14">&#9670;&#160;</a></span>Fila1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Fila1[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3fb4c936c2b1120b2f4e4cbf6ebdee5" name="af3fb4c936c2b1120b2f4e4cbf6ebdee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3fb4c936c2b1120b2f4e4cbf6ebdee5">&#9670;&#160;</a></span>Fila2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Fila2[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acca1086fe9d7011bbb1349f309af4273" name="acca1086fe9d7011bbb1349f309af4273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acca1086fe9d7011bbb1349f309af4273">&#9670;&#160;</a></span>Humedad</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Humedad[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae269899a408c67c3c75ee0a9d95dc3c5" name="ae269899a408c67c3c75ee0a9d95dc3c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae269899a408c67c3c75ee0a9d95dc3c5">&#9670;&#160;</a></span>idx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char idx = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b436b424e38dff9fe98506b2a60af19" name="a6b436b424e38dff9fe98506b2a60af19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b436b424e38dff9fe98506b2a60af19">&#9670;&#160;</a></span>Luz</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Luz[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9ac80a87872fd2f2a9cbe84c85d563e" name="ac9ac80a87872fd2f2a9cbe84c85d563e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9ac80a87872fd2f2a9cbe84c85d563e">&#9670;&#160;</a></span>Sensor_Humedad</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long Sensor_Humedad</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26eff80dfa6ddb1f43ba85e969c3e1fa" name="a26eff80dfa6ddb1f43ba85e969c3e1fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26eff80dfa6ddb1f43ba85e969c3e1fa">&#9670;&#160;</a></span>Sensor_Luz</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long Sensor_Luz</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a228ffa7c251c46548969951a57baa1b7" name="a228ffa7c251c46548969951a57baa1b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a228ffa7c251c46548969951a57baa1b7">&#9670;&#160;</a></span>Sensor_Temperatura</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long Sensor_Temperatura</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa77aa2d08e82042c060d733b25d96fde" name="aa77aa2d08e82042c060d733b25d96fde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa77aa2d08e82042c060d733b25d96fde">&#9670;&#160;</a></span>Temperatura</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Temperatura[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,126 @@
+\hypertarget{_l_c_d_8h}{}\doxysection{Referencia del Archivo LCD.\+h}
+\label{_l_c_d_8h}\index{LCD.h@{LCD.h}}
+
+
+Functions Handler LCD 16x2 mode 4 bits. /$\ast$$\ast$.  
+
+
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_l_c_d_8h_aa53c9d40f3aa552a9974cd55ac510cb3}{LCD\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em void LCD\+\_\+\+Init inicializa el LCD \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d_8h_a28735c052c54fa576f8f6f8bca963fe4}{LCD\+\_\+\+Command}} (unsigned char)
+\begin{DoxyCompactList}\small\item\em void LCD\+\_\+\+Command envia comandos al LCD \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d_8h_aabb29c7a1ecbadd623142601b109caff}{LCD\+\_\+\+Char}} (unsigned char x)
+\begin{DoxyCompactList}\small\item\em void LCD\+\_\+\+Char envia datos al LCD \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d_8h_a22f0a1e06eef47597408d0b782fa49f6}{LCD\+\_\+\+String}} (const char $\ast$)
+\begin{DoxyCompactList}\small\item\em void LCD\+\_\+\+String presente una cadena de datos \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d_8h_afedff6ea961e4641984f319129e3a1d4}{LCD\+\_\+\+String\+\_\+xy}} (char, char, const char $\ast$)
+\begin{DoxyCompactList}\small\item\em void LCD\+\_\+\+String\+\_\+xy presente una cadena de datos \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_l_c_d_8h_ae60d0b62d7eb3fa31266c095d7b3c245}{LCD\+\_\+\+Clear}} (void)
+\begin{DoxyCompactList}\small\item\em void LCD\+\_\+\+Clear \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Functions Handler LCD 16x2 mode 4 bits. /$\ast$$\ast$. 
+
+\begin{DoxyDate}{Fecha}
+2022-\/06-\/08 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autor}
+Fulvio Vivas \href{mailto:fyvivas@unicauca.edu.co}{\texttt{ fyvivas@unicauca.\+edu.\+co}}  
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{_l_c_d_8h_aabb29c7a1ecbadd623142601b109caff}\label{_l_c_d_8h_aabb29c7a1ecbadd623142601b109caff}} 
+\index{LCD.h@{LCD.h}!LCD\_Char@{LCD\_Char}}
+\index{LCD\_Char@{LCD\_Char}!LCD.h@{LCD.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_Char()}{LCD\_Char()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Char (\begin{DoxyParamCaption}\item[{unsigned char}]{x }\end{DoxyParamCaption})}
+
+
+
+void LCD\+\_\+\+Char envia datos al LCD 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em recibe} & parametro x para ser enviado al LCD \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_l_c_d_8h_ae60d0b62d7eb3fa31266c095d7b3c245}\label{_l_c_d_8h_ae60d0b62d7eb3fa31266c095d7b3c245}} 
+\index{LCD.h@{LCD.h}!LCD\_Clear@{LCD\_Clear}}
+\index{LCD\_Clear@{LCD\_Clear}!LCD.h@{LCD.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_Clear()}{LCD\_Clear()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Clear (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+void LCD\+\_\+\+Clear 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em limpia} & la pantalla del LCD \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_l_c_d_8h_a28735c052c54fa576f8f6f8bca963fe4}\label{_l_c_d_8h_a28735c052c54fa576f8f6f8bca963fe4}} 
+\index{LCD.h@{LCD.h}!LCD\_Command@{LCD\_Command}}
+\index{LCD\_Command@{LCD\_Command}!LCD.h@{LCD.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_Command()}{LCD\_Command()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Command (\begin{DoxyParamCaption}\item[{unsigned char}]{cmd }\end{DoxyParamCaption})}
+
+
+
+void LCD\+\_\+\+Command envia comandos al LCD 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em recibe} & parametro para ser enviado al LCD \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_l_c_d_8h_aa53c9d40f3aa552a9974cd55ac510cb3}\label{_l_c_d_8h_aa53c9d40f3aa552a9974cd55ac510cb3}} 
+\index{LCD.h@{LCD.h}!LCD\_Init@{LCD\_Init}}
+\index{LCD\_Init@{LCD\_Init}!LCD.h@{LCD.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_Init()}{LCD\_Init()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+void LCD\+\_\+\+Init inicializa el LCD 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em recibe} & parametro para inicializar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_l_c_d_8h_a22f0a1e06eef47597408d0b782fa49f6}\label{_l_c_d_8h_a22f0a1e06eef47597408d0b782fa49f6}} 
+\index{LCD.h@{LCD.h}!LCD\_String@{LCD\_String}}
+\index{LCD\_String@{LCD\_String}!LCD.h@{LCD.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_String()}{LCD\_String()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+
+void LCD\+\_\+\+String presente una cadena de datos 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em recibe} & cadena de datos hacia el LCD \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_l_c_d_8h_afedff6ea961e4641984f319129e3a1d4}\label{_l_c_d_8h_afedff6ea961e4641984f319129e3a1d4}} 
+\index{LCD.h@{LCD.h}!LCD\_String\_xy@{LCD\_String\_xy}}
+\index{LCD\_String\_xy@{LCD\_String\_xy}!LCD.h@{LCD.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_String\_xy()}{LCD\_String\_xy()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+String\+\_\+xy (\begin{DoxyParamCaption}\item[{char}]{row,  }\item[{char}]{pos,  }\item[{const char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+
+void LCD\+\_\+\+String\+\_\+xy presente una cadena de datos 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em recibe} & caracteres que seran representados en el LCD por filas y columnas \\
+\hline
+\end{DoxyParams}

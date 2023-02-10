@@ -1,0 +1,189 @@
+\hypertarget{main_8c}{}\doxysection{Referencia del Archivo main.\+c}
+\label{main_8c}\index{main.c@{main.c}}
+{\ttfamily \#include $<$xc.\+h$>$}\newline
+{\ttfamily \#include $<$pic16f887.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}CONFIG.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}LCD.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}adc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}uart.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8c_a40b4fe45622d5b33767ead7735f354c4}{beta}}~4090
+\item 
+\#define \mbox{\hyperlink{main_8c_a2ba834752bc4c2df784c289e2f34aeac}{TEMPERATURA\+\_\+\+ALTA}}~30
+\item 
+\#define \mbox{\hyperlink{main_8c_a3a2a8b08eaa7cd24cf5e33673fe70e71}{TEMPERATURA\+\_\+\+IDEAL}}~27
+\item 
+\#define \mbox{\hyperlink{main_8c_ab19967e86e8b6d7a21caf3ece59a2f56}{TEMPERATURA\+\_\+\+BAJA}}~24
+\item 
+\#define \mbox{\hyperlink{main_8c_a78314d026a41fd2bd57600a012409cb5}{HUMEDAD\+\_\+\+ALTA}}~100
+\item 
+\#define \mbox{\hyperlink{main_8c_a12cfd320c24e9ddae3961c530d35d6a2}{HUMEDAD\+\_\+\+IDEAL}}~80
+\item 
+\#define \mbox{\hyperlink{main_8c_a069fe9383201bca32c3b02b998d89fc8}{HUMEDAD\+\_\+\+BAJA}}~60
+\item 
+\#define \mbox{\hyperlink{main_8c_a3eb92cf70f1c10da92fc5547d8721db1}{MUCHA\+\_\+\+LUZ}}~20
+\item 
+\#define \mbox{\hyperlink{main_8c_a287a7e874610319b30009378ca1fc041}{l\+UZ\+\_\+\+IDEAL}}~150
+\item 
+\#define \mbox{\hyperlink{main_8c_aa04b9fdb7ee051d5cf2540fdb8835807}{POCA\+\_\+\+LUZ}}~900
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8c_acdef7a1fd863a6d3770c1268cb06add3}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \mbox{\hyperlink{main_8c_ae269899a408c67c3c75ee0a9d95dc3c5}{idx}} = 0
+\item 
+char \mbox{\hyperlink{main_8c_aa77aa2d08e82042c060d733b25d96fde}{Temperatura}} \mbox{[}4\mbox{]}
+\item 
+char \mbox{\hyperlink{main_8c_acca1086fe9d7011bbb1349f309af4273}{Humedad}} \mbox{[}4\mbox{]}
+\item 
+char \mbox{\hyperlink{main_8c_a6b436b424e38dff9fe98506b2a60af19}{Luz}} \mbox{[}$\,$\mbox{]}
+\item 
+char \mbox{\hyperlink{main_8c_aaf9959a2c6c9c45e8bdaf38290357a14}{Fila1}} \mbox{[}16\mbox{]}
+\item 
+char \mbox{\hyperlink{main_8c_af3fb4c936c2b1120b2f4e4cbf6ebdee5}{Fila2}} \mbox{[}16\mbox{]}
+\item 
+long \mbox{\hyperlink{main_8c_a228ffa7c251c46548969951a57baa1b7}{Sensor\+\_\+\+Temperatura}}
+\item 
+long \mbox{\hyperlink{main_8c_ac9ac80a87872fd2f2a9cbe84c85d563e}{Sensor\+\_\+\+Humedad}}
+\item 
+long \mbox{\hyperlink{main_8c_a26eff80dfa6ddb1f43ba85e969c3e1fa}{Sensor\+\_\+\+Luz}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{main_8c_a40b4fe45622d5b33767ead7735f354c4}\label{main_8c_a40b4fe45622d5b33767ead7735f354c4}} 
+\index{main.c@{main.c}!beta@{beta}}
+\index{beta@{beta}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{beta}{beta}}
+{\footnotesize\ttfamily \#define beta~4090}
+
+\mbox{\Hypertarget{main_8c_a78314d026a41fd2bd57600a012409cb5}\label{main_8c_a78314d026a41fd2bd57600a012409cb5}} 
+\index{main.c@{main.c}!HUMEDAD\_ALTA@{HUMEDAD\_ALTA}}
+\index{HUMEDAD\_ALTA@{HUMEDAD\_ALTA}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{HUMEDAD\_ALTA}{HUMEDAD\_ALTA}}
+{\footnotesize\ttfamily \#define HUMEDAD\+\_\+\+ALTA~100}
+
+\mbox{\Hypertarget{main_8c_a069fe9383201bca32c3b02b998d89fc8}\label{main_8c_a069fe9383201bca32c3b02b998d89fc8}} 
+\index{main.c@{main.c}!HUMEDAD\_BAJA@{HUMEDAD\_BAJA}}
+\index{HUMEDAD\_BAJA@{HUMEDAD\_BAJA}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{HUMEDAD\_BAJA}{HUMEDAD\_BAJA}}
+{\footnotesize\ttfamily \#define HUMEDAD\+\_\+\+BAJA~60}
+
+\mbox{\Hypertarget{main_8c_a12cfd320c24e9ddae3961c530d35d6a2}\label{main_8c_a12cfd320c24e9ddae3961c530d35d6a2}} 
+\index{main.c@{main.c}!HUMEDAD\_IDEAL@{HUMEDAD\_IDEAL}}
+\index{HUMEDAD\_IDEAL@{HUMEDAD\_IDEAL}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{HUMEDAD\_IDEAL}{HUMEDAD\_IDEAL}}
+{\footnotesize\ttfamily \#define HUMEDAD\+\_\+\+IDEAL~80}
+
+\mbox{\Hypertarget{main_8c_a287a7e874610319b30009378ca1fc041}\label{main_8c_a287a7e874610319b30009378ca1fc041}} 
+\index{main.c@{main.c}!lUZ\_IDEAL@{lUZ\_IDEAL}}
+\index{lUZ\_IDEAL@{lUZ\_IDEAL}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{lUZ\_IDEAL}{lUZ\_IDEAL}}
+{\footnotesize\ttfamily \#define l\+UZ\+\_\+\+IDEAL~150}
+
+\mbox{\Hypertarget{main_8c_a3eb92cf70f1c10da92fc5547d8721db1}\label{main_8c_a3eb92cf70f1c10da92fc5547d8721db1}} 
+\index{main.c@{main.c}!MUCHA\_LUZ@{MUCHA\_LUZ}}
+\index{MUCHA\_LUZ@{MUCHA\_LUZ}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{MUCHA\_LUZ}{MUCHA\_LUZ}}
+{\footnotesize\ttfamily \#define MUCHA\+\_\+\+LUZ~20}
+
+\mbox{\Hypertarget{main_8c_aa04b9fdb7ee051d5cf2540fdb8835807}\label{main_8c_aa04b9fdb7ee051d5cf2540fdb8835807}} 
+\index{main.c@{main.c}!POCA\_LUZ@{POCA\_LUZ}}
+\index{POCA\_LUZ@{POCA\_LUZ}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{POCA\_LUZ}{POCA\_LUZ}}
+{\footnotesize\ttfamily \#define POCA\+\_\+\+LUZ~900}
+
+\mbox{\Hypertarget{main_8c_a2ba834752bc4c2df784c289e2f34aeac}\label{main_8c_a2ba834752bc4c2df784c289e2f34aeac}} 
+\index{main.c@{main.c}!TEMPERATURA\_ALTA@{TEMPERATURA\_ALTA}}
+\index{TEMPERATURA\_ALTA@{TEMPERATURA\_ALTA}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{TEMPERATURA\_ALTA}{TEMPERATURA\_ALTA}}
+{\footnotesize\ttfamily \#define TEMPERATURA\+\_\+\+ALTA~30}
+
+\mbox{\Hypertarget{main_8c_ab19967e86e8b6d7a21caf3ece59a2f56}\label{main_8c_ab19967e86e8b6d7a21caf3ece59a2f56}} 
+\index{main.c@{main.c}!TEMPERATURA\_BAJA@{TEMPERATURA\_BAJA}}
+\index{TEMPERATURA\_BAJA@{TEMPERATURA\_BAJA}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{TEMPERATURA\_BAJA}{TEMPERATURA\_BAJA}}
+{\footnotesize\ttfamily \#define TEMPERATURA\+\_\+\+BAJA~24}
+
+\mbox{\Hypertarget{main_8c_a3a2a8b08eaa7cd24cf5e33673fe70e71}\label{main_8c_a3a2a8b08eaa7cd24cf5e33673fe70e71}} 
+\index{main.c@{main.c}!TEMPERATURA\_IDEAL@{TEMPERATURA\_IDEAL}}
+\index{TEMPERATURA\_IDEAL@{TEMPERATURA\_IDEAL}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{TEMPERATURA\_IDEAL}{TEMPERATURA\_IDEAL}}
+{\footnotesize\ttfamily \#define TEMPERATURA\+\_\+\+IDEAL~27}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{main_8c_acdef7a1fd863a6d3770c1268cb06add3}\label{main_8c_acdef7a1fd863a6d3770c1268cb06add3}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily void main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentación de las variables}
+\mbox{\Hypertarget{main_8c_aaf9959a2c6c9c45e8bdaf38290357a14}\label{main_8c_aaf9959a2c6c9c45e8bdaf38290357a14}} 
+\index{main.c@{main.c}!Fila1@{Fila1}}
+\index{Fila1@{Fila1}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Fila1}{Fila1}}
+{\footnotesize\ttfamily char Fila1\mbox{[}16\mbox{]}}
+
+\mbox{\Hypertarget{main_8c_af3fb4c936c2b1120b2f4e4cbf6ebdee5}\label{main_8c_af3fb4c936c2b1120b2f4e4cbf6ebdee5}} 
+\index{main.c@{main.c}!Fila2@{Fila2}}
+\index{Fila2@{Fila2}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Fila2}{Fila2}}
+{\footnotesize\ttfamily char Fila2\mbox{[}16\mbox{]}}
+
+\mbox{\Hypertarget{main_8c_acca1086fe9d7011bbb1349f309af4273}\label{main_8c_acca1086fe9d7011bbb1349f309af4273}} 
+\index{main.c@{main.c}!Humedad@{Humedad}}
+\index{Humedad@{Humedad}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Humedad}{Humedad}}
+{\footnotesize\ttfamily char Humedad\mbox{[}4\mbox{]}}
+
+\mbox{\Hypertarget{main_8c_ae269899a408c67c3c75ee0a9d95dc3c5}\label{main_8c_ae269899a408c67c3c75ee0a9d95dc3c5}} 
+\index{main.c@{main.c}!idx@{idx}}
+\index{idx@{idx}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{idx}{idx}}
+{\footnotesize\ttfamily unsigned char idx = 0}
+
+\mbox{\Hypertarget{main_8c_a6b436b424e38dff9fe98506b2a60af19}\label{main_8c_a6b436b424e38dff9fe98506b2a60af19}} 
+\index{main.c@{main.c}!Luz@{Luz}}
+\index{Luz@{Luz}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Luz}{Luz}}
+{\footnotesize\ttfamily char Luz\mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{main_8c_ac9ac80a87872fd2f2a9cbe84c85d563e}\label{main_8c_ac9ac80a87872fd2f2a9cbe84c85d563e}} 
+\index{main.c@{main.c}!Sensor\_Humedad@{Sensor\_Humedad}}
+\index{Sensor\_Humedad@{Sensor\_Humedad}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Sensor\_Humedad}{Sensor\_Humedad}}
+{\footnotesize\ttfamily long Sensor\+\_\+\+Humedad}
+
+\mbox{\Hypertarget{main_8c_a26eff80dfa6ddb1f43ba85e969c3e1fa}\label{main_8c_a26eff80dfa6ddb1f43ba85e969c3e1fa}} 
+\index{main.c@{main.c}!Sensor\_Luz@{Sensor\_Luz}}
+\index{Sensor\_Luz@{Sensor\_Luz}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Sensor\_Luz}{Sensor\_Luz}}
+{\footnotesize\ttfamily long Sensor\+\_\+\+Luz}
+
+\mbox{\Hypertarget{main_8c_a228ffa7c251c46548969951a57baa1b7}\label{main_8c_a228ffa7c251c46548969951a57baa1b7}} 
+\index{main.c@{main.c}!Sensor\_Temperatura@{Sensor\_Temperatura}}
+\index{Sensor\_Temperatura@{Sensor\_Temperatura}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Sensor\_Temperatura}{Sensor\_Temperatura}}
+{\footnotesize\ttfamily long Sensor\+\_\+\+Temperatura}
+
+\mbox{\Hypertarget{main_8c_aa77aa2d08e82042c060d733b25d96fde}\label{main_8c_aa77aa2d08e82042c060d733b25d96fde}} 
+\index{main.c@{main.c}!Temperatura@{Temperatura}}
+\index{Temperatura@{Temperatura}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Temperatura}{Temperatura}}
+{\footnotesize\ttfamily char Temperatura\mbox{[}4\mbox{]}}
+

@@ -1,0 +1,86 @@
+\hypertarget{uart_8h}{}\doxysection{Referencia del Archivo uart.\+h}
+\label{uart_8h}\index{uart.h@{uart.h}}
+{\ttfamily \#include $<$pic16f887.\+h$>$}\newline
+{\ttfamily \#include $<$xc.\+h$>$}\newline
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{uart_8h_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+CPU}}~8000000/64
+\item 
+\#define \mbox{\hyperlink{uart_8h_acea008bd2e51bf8d1466e20b35ff2742}{Baud\+\_\+value}}~(((float)(\mbox{\hyperlink{uart_8h_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+CPU}})/(float)baud\+\_\+rate)-\/1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{uart_8h_a9da0ff2cd0e74359fab0cc3b86cf937c}{USART\+\_\+\+Init}} (long)
+\item 
+void \mbox{\hyperlink{uart_8h_a1ecf3a492db255ed7bea73afddc26a00}{USART\+\_\+\+Tx\+Char}} (char)
+\begin{DoxyCompactList}\small\item\em void USART\+\_\+\+Tx\+Char envia un caracter para poder ser transmitido \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{uart_8h_a4a1732544fe63b57954eda2fdf6fd5e0}{USART\+\_\+\+Send\+String}} (const char $\ast$)
+\begin{DoxyCompactList}\small\item\em void USART\+\_\+\+Send\+String envia un caracter \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{uart_8h_a600231bce9ac71e7b6408b801e4516e7}{USART\+\_\+\+Rx\+Char}} ()
+\begin{DoxyCompactList}\small\item\em void USART\+\_\+\+Rx\+Char sirve como funcion de receptor \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{uart_8h_acea008bd2e51bf8d1466e20b35ff2742}\label{uart_8h_acea008bd2e51bf8d1466e20b35ff2742}} 
+\index{uart.h@{uart.h}!Baud\_value@{Baud\_value}}
+\index{Baud\_value@{Baud\_value}!uart.h@{uart.h}}
+\doxysubsubsection{\texorpdfstring{Baud\_value}{Baud\_value}}
+{\footnotesize\ttfamily \#define Baud\+\_\+value~(((float)(\mbox{\hyperlink{uart_8h_a43bafb28b29491ec7f871319b5a3b2f8}{F\+\_\+\+CPU}})/(float)baud\+\_\+rate)-\/1)}
+
+\mbox{\Hypertarget{uart_8h_a43bafb28b29491ec7f871319b5a3b2f8}\label{uart_8h_a43bafb28b29491ec7f871319b5a3b2f8}} 
+\index{uart.h@{uart.h}!F\_CPU@{F\_CPU}}
+\index{F\_CPU@{F\_CPU}!uart.h@{uart.h}}
+\doxysubsubsection{\texorpdfstring{F\_CPU}{F\_CPU}}
+{\footnotesize\ttfamily \#define F\+\_\+\+CPU~8000000/64}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{uart_8h_a9da0ff2cd0e74359fab0cc3b86cf937c}\label{uart_8h_a9da0ff2cd0e74359fab0cc3b86cf937c}} 
+\index{uart.h@{uart.h}!USART\_Init@{USART\_Init}}
+\index{USART\_Init@{USART\_Init}!uart.h@{uart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_Init()}{USART\_Init()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Init (\begin{DoxyParamCaption}\item[{long}]{baud\+\_\+rate }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{uart_8h_a600231bce9ac71e7b6408b801e4516e7}\label{uart_8h_a600231bce9ac71e7b6408b801e4516e7}} 
+\index{uart.h@{uart.h}!USART\_RxChar@{USART\_RxChar}}
+\index{USART\_RxChar@{USART\_RxChar}!uart.h@{uart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_RxChar()}{USART\_RxChar()}}
+{\footnotesize\ttfamily char USART\+\_\+\+Rx\+Char (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+void USART\+\_\+\+Rx\+Char sirve como funcion de receptor 
+
+\mbox{\Hypertarget{uart_8h_a4a1732544fe63b57954eda2fdf6fd5e0}\label{uart_8h_a4a1732544fe63b57954eda2fdf6fd5e0}} 
+\index{uart.h@{uart.h}!USART\_SendString@{USART\_SendString}}
+\index{USART\_SendString@{USART\_SendString}!uart.h@{uart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_SendString()}{USART\_SendString()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Send\+String (\begin{DoxyParamCaption}\item[{const char $\ast$}]{out }\end{DoxyParamCaption})}
+
+
+
+void USART\+\_\+\+Send\+String envia un caracter 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em recibe} & un caracter \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{uart_8h_a1ecf3a492db255ed7bea73afddc26a00}\label{uart_8h_a1ecf3a492db255ed7bea73afddc26a00}} 
+\index{uart.h@{uart.h}!USART\_TxChar@{USART\_TxChar}}
+\index{USART\_TxChar@{USART\_TxChar}!uart.h@{uart.h}}
+\doxysubsubsection{\texorpdfstring{USART\_TxChar()}{USART\_TxChar()}}
+{\footnotesize\ttfamily void USART\+\_\+\+Tx\+Char (\begin{DoxyParamCaption}\item[{char}]{out }\end{DoxyParamCaption})}
+
+
+
+void USART\+\_\+\+Tx\+Char envia un caracter para poder ser transmitido 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em recibe} & un caracter para ser transmitido \\
+\hline
+\end{DoxyParams}

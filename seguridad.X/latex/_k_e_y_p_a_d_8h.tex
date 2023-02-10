@@ -1,0 +1,207 @@
+\hypertarget{_k_e_y_p_a_d_8h}{}\doxysection{Referencia del Archivo KEYPAD.\+h}
+\label{_k_e_y_p_a_d_8h}\index{KEYPAD.h@{KEYPAD.h}}
+
+
+Functions Handler Keypad 4x4.  
+
+
+\doxysubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_ab2169364d166745179c7d0f102f72bee}{PB7}}~7
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_a7a6be6e252068c01d5b64112b5ebd608}{PB6}}~6
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_a45330be186503e07b66aa31c263bb021}{PB5}}~5
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_ab83e6008e4e414ae85649868cef48fa7}{PB4}}~4
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_a9531e9d4cc06b4d72823afe3b2f632f5}{PB3}}~3
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_aedce709abd1cf8bfd0e5b5db39a1b789}{PB2}}~2
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_a37eb042c0715e6f809fb8677b8805f57}{PB1}}~1
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_acb0f9abbadb16a66065b04c9e43b8f41}{PB0}}~0
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_a19c3058579f691a6d7a84b90843b94b4}{ROW1}}~\mbox{\hyperlink{_k_e_y_p_a_d_8h_acb0f9abbadb16a66065b04c9e43b8f41}{PB0}}
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_a7e621a2fee10ba3a2bd9641e8ef01267}{ROW2}}~\mbox{\hyperlink{_k_e_y_p_a_d_8h_a37eb042c0715e6f809fb8677b8805f57}{PB1}}
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_a97453a94a7c983fbc183a5a7aec8fd7f}{ROW3}}~\mbox{\hyperlink{_k_e_y_p_a_d_8h_aedce709abd1cf8bfd0e5b5db39a1b789}{PB2}}
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_af1fa473949d6d01fa5977a7d724eff31}{ROW4}}~\mbox{\hyperlink{_k_e_y_p_a_d_8h_a9531e9d4cc06b4d72823afe3b2f632f5}{PB3}}
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_a9c43cc82671177bdb2b4ac78035ed01b}{COL1}}~\mbox{\hyperlink{_k_e_y_p_a_d_8h_ab83e6008e4e414ae85649868cef48fa7}{PB4}}
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_a90090f6ae9c2a1d93ab868b45baa545d}{COL2}}~\mbox{\hyperlink{_k_e_y_p_a_d_8h_a45330be186503e07b66aa31c263bb021}{PB5}}
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_ae1d67ac01033bdec24bc3e4ea65a857c}{COL3}}~\mbox{\hyperlink{_k_e_y_p_a_d_8h_a7a6be6e252068c01d5b64112b5ebd608}{PB6}}
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_a40df755b4b78c1e753f39978d90889fc}{COL4}}~\mbox{\hyperlink{_k_e_y_p_a_d_8h_ab2169364d166745179c7d0f102f72bee}{PB7}}
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_a50024e2bcd1fa8d2cbead23970643a5c}{PTECLADO}}~TRISB
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_adc98e55b346a76499570129115b6917f}{FILAS}}~PORTB
+\item 
+\#define \mbox{\hyperlink{_k_e_y_p_a_d_8h_a6aaab185063028ab19d3d8a7f90a58ac}{COLUMNAS}}~PORTB
+\end{DoxyCompactItemize}
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_k_e_y_p_a_d_8h_a6251d77640c20427e931246b9b1547f0}{keypad\+\_\+init}} (void)
+\item 
+char \mbox{\hyperlink{_k_e_y_p_a_d_8h_a8b64638b56e38f1c8315f50809b11081}{keypad\+\_\+getkey}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Functions Handler Keypad 4x4. 
+
+\begin{DoxyDate}{Fecha}
+2022-\/06-\/08 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autor}
+Fulvio Vivas \href{mailto:fyvivas@unicauca.edu.co}{\texttt{ fyvivas@unicauca.\+edu.\+co}} 
+\end{DoxyAuthor}
+\begin{DoxyParagraph}{Copyright}
+Information contained herein is proprietary to and constitutes valuable confidential trade secrets of unicauca, and is subject to restrictions on use and disclosure.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Copyright (c) unicauca 2022. All rights reserved.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+The copyright notices above do not evidence any actual or intended publication of this material. 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_a9c43cc82671177bdb2b4ac78035ed01b}\label{_k_e_y_p_a_d_8h_a9c43cc82671177bdb2b4ac78035ed01b}} 
+\index{KEYPAD.h@{KEYPAD.h}!COL1@{COL1}}
+\index{COL1@{COL1}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{COL1}{COL1}}
+{\footnotesize\ttfamily \#define COL1~\mbox{\hyperlink{_k_e_y_p_a_d_8h_ab83e6008e4e414ae85649868cef48fa7}{PB4}}}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_a90090f6ae9c2a1d93ab868b45baa545d}\label{_k_e_y_p_a_d_8h_a90090f6ae9c2a1d93ab868b45baa545d}} 
+\index{KEYPAD.h@{KEYPAD.h}!COL2@{COL2}}
+\index{COL2@{COL2}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{COL2}{COL2}}
+{\footnotesize\ttfamily \#define COL2~\mbox{\hyperlink{_k_e_y_p_a_d_8h_a45330be186503e07b66aa31c263bb021}{PB5}}}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_ae1d67ac01033bdec24bc3e4ea65a857c}\label{_k_e_y_p_a_d_8h_ae1d67ac01033bdec24bc3e4ea65a857c}} 
+\index{KEYPAD.h@{KEYPAD.h}!COL3@{COL3}}
+\index{COL3@{COL3}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{COL3}{COL3}}
+{\footnotesize\ttfamily \#define COL3~\mbox{\hyperlink{_k_e_y_p_a_d_8h_a7a6be6e252068c01d5b64112b5ebd608}{PB6}}}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_a40df755b4b78c1e753f39978d90889fc}\label{_k_e_y_p_a_d_8h_a40df755b4b78c1e753f39978d90889fc}} 
+\index{KEYPAD.h@{KEYPAD.h}!COL4@{COL4}}
+\index{COL4@{COL4}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{COL4}{COL4}}
+{\footnotesize\ttfamily \#define COL4~\mbox{\hyperlink{_k_e_y_p_a_d_8h_ab2169364d166745179c7d0f102f72bee}{PB7}}}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_a6aaab185063028ab19d3d8a7f90a58ac}\label{_k_e_y_p_a_d_8h_a6aaab185063028ab19d3d8a7f90a58ac}} 
+\index{KEYPAD.h@{KEYPAD.h}!COLUMNAS@{COLUMNAS}}
+\index{COLUMNAS@{COLUMNAS}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{COLUMNAS}{COLUMNAS}}
+{\footnotesize\ttfamily \#define COLUMNAS~PORTB}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_adc98e55b346a76499570129115b6917f}\label{_k_e_y_p_a_d_8h_adc98e55b346a76499570129115b6917f}} 
+\index{KEYPAD.h@{KEYPAD.h}!FILAS@{FILAS}}
+\index{FILAS@{FILAS}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{FILAS}{FILAS}}
+{\footnotesize\ttfamily \#define FILAS~PORTB}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_acb0f9abbadb16a66065b04c9e43b8f41}\label{_k_e_y_p_a_d_8h_acb0f9abbadb16a66065b04c9e43b8f41}} 
+\index{KEYPAD.h@{KEYPAD.h}!PB0@{PB0}}
+\index{PB0@{PB0}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{PB0}{PB0}}
+{\footnotesize\ttfamily \#define PB0~0}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_a37eb042c0715e6f809fb8677b8805f57}\label{_k_e_y_p_a_d_8h_a37eb042c0715e6f809fb8677b8805f57}} 
+\index{KEYPAD.h@{KEYPAD.h}!PB1@{PB1}}
+\index{PB1@{PB1}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{PB1}{PB1}}
+{\footnotesize\ttfamily \#define PB1~1}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_aedce709abd1cf8bfd0e5b5db39a1b789}\label{_k_e_y_p_a_d_8h_aedce709abd1cf8bfd0e5b5db39a1b789}} 
+\index{KEYPAD.h@{KEYPAD.h}!PB2@{PB2}}
+\index{PB2@{PB2}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{PB2}{PB2}}
+{\footnotesize\ttfamily \#define PB2~2}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_a9531e9d4cc06b4d72823afe3b2f632f5}\label{_k_e_y_p_a_d_8h_a9531e9d4cc06b4d72823afe3b2f632f5}} 
+\index{KEYPAD.h@{KEYPAD.h}!PB3@{PB3}}
+\index{PB3@{PB3}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{PB3}{PB3}}
+{\footnotesize\ttfamily \#define PB3~3}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_ab83e6008e4e414ae85649868cef48fa7}\label{_k_e_y_p_a_d_8h_ab83e6008e4e414ae85649868cef48fa7}} 
+\index{KEYPAD.h@{KEYPAD.h}!PB4@{PB4}}
+\index{PB4@{PB4}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{PB4}{PB4}}
+{\footnotesize\ttfamily \#define PB4~4}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_a45330be186503e07b66aa31c263bb021}\label{_k_e_y_p_a_d_8h_a45330be186503e07b66aa31c263bb021}} 
+\index{KEYPAD.h@{KEYPAD.h}!PB5@{PB5}}
+\index{PB5@{PB5}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{PB5}{PB5}}
+{\footnotesize\ttfamily \#define PB5~5}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_a7a6be6e252068c01d5b64112b5ebd608}\label{_k_e_y_p_a_d_8h_a7a6be6e252068c01d5b64112b5ebd608}} 
+\index{KEYPAD.h@{KEYPAD.h}!PB6@{PB6}}
+\index{PB6@{PB6}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{PB6}{PB6}}
+{\footnotesize\ttfamily \#define PB6~6}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_ab2169364d166745179c7d0f102f72bee}\label{_k_e_y_p_a_d_8h_ab2169364d166745179c7d0f102f72bee}} 
+\index{KEYPAD.h@{KEYPAD.h}!PB7@{PB7}}
+\index{PB7@{PB7}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{PB7}{PB7}}
+{\footnotesize\ttfamily \#define PB7~7}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_a50024e2bcd1fa8d2cbead23970643a5c}\label{_k_e_y_p_a_d_8h_a50024e2bcd1fa8d2cbead23970643a5c}} 
+\index{KEYPAD.h@{KEYPAD.h}!PTECLADO@{PTECLADO}}
+\index{PTECLADO@{PTECLADO}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{PTECLADO}{PTECLADO}}
+{\footnotesize\ttfamily \#define PTECLADO~TRISB}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_a19c3058579f691a6d7a84b90843b94b4}\label{_k_e_y_p_a_d_8h_a19c3058579f691a6d7a84b90843b94b4}} 
+\index{KEYPAD.h@{KEYPAD.h}!ROW1@{ROW1}}
+\index{ROW1@{ROW1}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{ROW1}{ROW1}}
+{\footnotesize\ttfamily \#define ROW1~\mbox{\hyperlink{_k_e_y_p_a_d_8h_acb0f9abbadb16a66065b04c9e43b8f41}{PB0}}}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_a7e621a2fee10ba3a2bd9641e8ef01267}\label{_k_e_y_p_a_d_8h_a7e621a2fee10ba3a2bd9641e8ef01267}} 
+\index{KEYPAD.h@{KEYPAD.h}!ROW2@{ROW2}}
+\index{ROW2@{ROW2}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{ROW2}{ROW2}}
+{\footnotesize\ttfamily \#define ROW2~\mbox{\hyperlink{_k_e_y_p_a_d_8h_a37eb042c0715e6f809fb8677b8805f57}{PB1}}}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_a97453a94a7c983fbc183a5a7aec8fd7f}\label{_k_e_y_p_a_d_8h_a97453a94a7c983fbc183a5a7aec8fd7f}} 
+\index{KEYPAD.h@{KEYPAD.h}!ROW3@{ROW3}}
+\index{ROW3@{ROW3}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{ROW3}{ROW3}}
+{\footnotesize\ttfamily \#define ROW3~\mbox{\hyperlink{_k_e_y_p_a_d_8h_aedce709abd1cf8bfd0e5b5db39a1b789}{PB2}}}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_af1fa473949d6d01fa5977a7d724eff31}\label{_k_e_y_p_a_d_8h_af1fa473949d6d01fa5977a7d724eff31}} 
+\index{KEYPAD.h@{KEYPAD.h}!ROW4@{ROW4}}
+\index{ROW4@{ROW4}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{ROW4}{ROW4}}
+{\footnotesize\ttfamily \#define ROW4~\mbox{\hyperlink{_k_e_y_p_a_d_8h_a9531e9d4cc06b4d72823afe3b2f632f5}{PB3}}}
+
+
+
+\doxysubsection{Documentación de las funciones}
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_a8b64638b56e38f1c8315f50809b11081}\label{_k_e_y_p_a_d_8h_a8b64638b56e38f1c8315f50809b11081}} 
+\index{KEYPAD.h@{KEYPAD.h}!keypad\_getkey@{keypad\_getkey}}
+\index{keypad\_getkey@{keypad\_getkey}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{keypad\_getkey()}{keypad\_getkey()}}
+{\footnotesize\ttfamily char keypad\+\_\+getkey (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_k_e_y_p_a_d_8h_a6251d77640c20427e931246b9b1547f0}\label{_k_e_y_p_a_d_8h_a6251d77640c20427e931246b9b1547f0}} 
+\index{KEYPAD.h@{KEYPAD.h}!keypad\_init@{keypad\_init}}
+\index{keypad\_init@{keypad\_init}!KEYPAD.h@{KEYPAD.h}}
+\doxysubsubsection{\texorpdfstring{keypad\_init()}{keypad\_init()}}
+{\footnotesize\ttfamily void keypad\+\_\+init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
